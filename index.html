@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Indian Map</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <script src="script.js"></script>
+</head>
+<body>
+  <div id="map-container">
+    <img src="India-map-en.svg" id="india-map" usemap="#india-map" />
+    <map name="india-map">
+      <area shape="poly" coords="100,50,150,100,200,50,150,0" data-key="delhi" data-name="Delhi">
+      <area shape="poly" coords="300,150,350,200,400,150,350,100" data-key="mumbai" data-name="Mumbai">
+      <area shape="poly" coords="200,200,250,250,300,200,250,150" data-key="kolkata" data-name="Kolkata">
+      <area shape="poly" coords="450,300,500,350,550,300,500,250" data-key="chennai" data-name="Chennai">
+      <area shape="poly" coords="400,100,450,150,500,100,450,50" data-key="bengaluru" data-name="Bengaluru">
+    </map>
+  </div>
+  <div id="search-container">
+    <input type="text" id="search-input" placeholder="Search for a place">
+    <ul id="places-list">
+      <li data-key="delhi">Delhi</li>
+      <li data-key="mumbai">Mumbai</li>
+      <li data-key="kolkata">Kolkata</li>
+      <li data-key="chennai">Chennai</li>
+      <li data-key="bengaluru">Bengaluru</li>
+    </ul>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
